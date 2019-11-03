@@ -5,4 +5,5 @@ REM "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\
 %~dp0\PokerLeagueManager.Utilities\bin\Debug\PokerLeagueManager.Utilities.exe CreateEventSubscriber localhost PokerLeagueManager.DB.EventStore http://localhost:13831
 %~dp0\PokerLeagueManager.Utilities\bin\Debug\PokerLeagueManager.Utilities.exe GenerateSampleData http://localhost:4224 5
 
+REM "Lol WAT!!!"
 pause
