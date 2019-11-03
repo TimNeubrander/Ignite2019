@@ -43,7 +43,10 @@ steps:
     SourceFolder: '$(build.SourcesDirectory)'
     Contents: |
       **\*.dacpac
-      **\*.zip
+      **\PokerLeagueManager.Commands.WebApi.zip
+      **\PokerLeagueManager.Events.WebApi.zip
+      **\PokerLeagueManager.Queries.WebApi.zip
+      **\PokerLeagueManager.UI.Web.zip
       !.git\**\
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     CleanTargetFolder: true
@@ -52,7 +55,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(agent.builddirectory)'
-    Contents: '**\src\PokerLeagueManager.Utilties\bin\Debug\**'
+    Contents: 'src\PokerLeagueManager.Utilties\bin\Debug\**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)\Utility'
 
 
