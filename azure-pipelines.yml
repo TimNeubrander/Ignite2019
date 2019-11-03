@@ -62,7 +62,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(BuildSourcesDirectory)\src\PokerLeagueManagerUtilities\bin\$(BuildConfConfiguration)'
+    SourceFolder: '$(BuildSourcesDirectory)\src\PokerLeagueManagerUtilities\bin\$(buildConfiguration)'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)\Utility'
 
