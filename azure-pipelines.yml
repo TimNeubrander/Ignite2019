@@ -59,10 +59,11 @@ steps:
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)\deploy'
 
-
+   
 - task: CopyFiles@2
+  displayName: Copy Utility
   inputs:
-    SourceFolder: '$(BuildSourcesDirectory)\src\PokerLeagueManager.Utilities\bin\$(buildConfiguration)'
+    SourceFolder: '$(Build.SourcesDirectory)\src\PokerLeagueManager.Utilities\bin\$(BuildConfiguration)'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)\Utility'
 
