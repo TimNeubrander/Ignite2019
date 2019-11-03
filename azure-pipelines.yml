@@ -40,9 +40,13 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(build.SourcesDirectory)'
-    Contents: '**\*.dacpac'
+    Contents: |
+      **\*.dacpac
+      **\*.zip
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     flattenFolders: true
+
+
 
 - task: PublishBuildArtifacts@1
   inputs:
