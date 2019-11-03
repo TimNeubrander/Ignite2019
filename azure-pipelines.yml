@@ -54,8 +54,8 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(agent.builddirectory)'
-    Contents: 'src\PokerLeagueManager.Utilties\bin\Debug\**'
+    SourceFolder: '$(build.SourcesDirectory)\src\PokerLeagueManager.Utilties\bin\Debug'
+    Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)\Utility'
 
 
